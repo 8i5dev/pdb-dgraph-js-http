@@ -1,4 +1,4 @@
-import { Assigned, Mutation, Operation, Options, Payload, Request, Response, TxnContext, UiKeywords } from "./types";
+import { AdminRequest, AdminResponse, Assigned, Mutation, Operation, Options, Payload, Request, Response, TxnContext, UiKeywords } from "./types";
 export declare class DgraphClientStub {
     private readonly addr;
     private readonly options;
@@ -16,6 +16,7 @@ export declare class DgraphClientStub {
     alter(op: Operation): Promise<Payload>;
     query(req: Request): Promise<Response>;
     mutate(mu: Mutation): Promise<Assigned>;
+    admin(req: AdminRequest): Promise<AdminResponse>;
     commit(ctx: TxnContext): Promise<TxnContext>;
     abort(ctx: TxnContext): Promise<TxnContext>;
     login(userid?: string, password?: string, refreshToken?: string): Promise<boolean>;
