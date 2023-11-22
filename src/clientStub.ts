@@ -3,6 +3,7 @@ import * as jwt from "jsonwebtoken";
 
 import { APIError, APIResultError, HTTPError } from "./errors";
 import {
+    AdminRequest, AdminResponse,
     Assigned,
     Config,
     ErrorNonJson,
@@ -272,6 +273,21 @@ export class DgraphClientStub {
             ...this.options,
             method: "POST",
             body,
+            headers,
+        });
+    }
+
+    public admin(req: AdminRequest): Promise<AdminResponse> {
+        const headers =
+            this.options.headers !== undefined
+                ? { ...this.options.headers }
+                : {};
+        headers["Content-Type"] = "application/graphql";
+
+        return this.callAPI("admin", {
+            ...this.options,
+            method: "POST",
+            body: req.mutation,
             headers,
         });
     }

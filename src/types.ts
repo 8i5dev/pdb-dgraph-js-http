@@ -52,6 +52,26 @@ export interface Mutation {
     hash?: string;
 }
 
+export interface AdminRequest {
+    mutation: string;
+}
+
+export interface AdminResponse {
+    data: {};
+    extensions: AdminExtensions;
+}
+
+export interface AdminExtensions {
+    tracing: AdminTracing;
+}
+
+export interface AdminTracing {
+    version: number;
+    startTime: string;
+    endTime: string;
+    duration: number;
+}
+
 export interface Assigned {
     data: AssignedData;
     extensions: Extensions;
