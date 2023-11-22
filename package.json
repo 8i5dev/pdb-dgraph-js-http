@@ -1,16 +1,16 @@
 {
   "name": "pdb-dgraph-js-http",
-  "version": "23.0.1-pdb",
+  "version": "23.0.2-pdb",
   "description": "A javascript HTTP client for Dgraph",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dgraph-io/dgraph-js-http.git"
+    "url": "https://github.com/8i5dev/pdb-dgraph-js-http.git"
   },
   "bugs": {
-    "url": "https://github.com/dgraph-io/dgraph-js-http/issues"
+    "url": "https://github.com/8i5dev/pdb-dgraph-js-http/issues"
   },
-  "homepage": "https://github.com/dgraph-io/dgraph-js-http#readme",
+  "homepage": "https://github.com/8i5dev/pdb-dgraph-js-http#readme",
   "files": [
     "lib"
   ],
