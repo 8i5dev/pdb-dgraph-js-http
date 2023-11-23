@@ -51,8 +51,17 @@ export interface AdminRequest {
     mutation: string;
 }
 export interface AdminResponse {
+    errors?: AdminError[];
     data: {};
     extensions: AdminExtensions;
+}
+export interface AdminError {
+    message: string;
+    locations: AdminErrorLocation[];
+}
+export interface AdminErrorLocation {
+    line: number;
+    column: number;
 }
 export interface AdminExtensions {
     tracing: AdminTracing;

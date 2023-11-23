@@ -1,6 +1,6 @@
 {
   "name": "pdb-dgraph-js-http",
-  "version": "23.0.2-pdb",
+  "version": "23.0.3-pdb",
   "description": "A javascript HTTP client for Dgraph",
   "license": "Apache-2.0",
   "repository": {

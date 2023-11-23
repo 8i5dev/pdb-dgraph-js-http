@@ -3,7 +3,8 @@ import * as jwt from "jsonwebtoken";
 
 import { APIError, APIResultError, HTTPError } from "./errors";
 import {
-    AdminRequest, AdminResponse,
+    AdminRequest,
+    AdminResponse,
     Assigned,
     Config,
     ErrorNonJson,
